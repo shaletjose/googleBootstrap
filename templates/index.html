@@ -1,0 +1,92 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Google Home Page</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="google-header">
+        <div class="gmail-img"><img src="{% static 'images/user.jpg' %}" title="google account:test@gmail.com"></div>
+        <div class="header-icons">
+            <i class="fa fa-bell"></i>
+            <i class="fa fa-th"></i>
+            <a href="#">Images</a>
+            <a href="#">Gmail</a>
+        </div>
+    </div>
+    <div class="google-search">
+        <div class="google-image text-center" title="google">
+            <img src="{% static 'images/google-logo1.png' %}">
+        </div>
+        <div class="input-group text-center">
+            <input type="text" class="form-control" placeholder="search Google or type a URL">
+            <div class="input-group-append">
+                <span class="input-group-text"> <i class="fa fa-microphone" title="search by voice"></i></span>
+            </div>
+        </div>
+    </div>
+    <div class="bookmarks">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="site" title="Gmail">
+                    <i class="fa fa-envelope-o"></i>
+                    <p>Gmail</p>
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+                <div class="site" title="Facebook">
+                    <i class="fa fa-facebook-square"></i>
+                    <p>Facebook</p>
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+                <div class="site" title="Instagram">
+                    <i class="fa fa-instagram"></i>
+                    <p>Instagram</p>
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+                <div class="site" title="Youtube">
+                    <i class="fa fa-youtube-play"></i>
+                    <p>Youtube</p>
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+                <div class="site" title="Linkedin">
+                    <i class="fa fa-linkedin"></i>
+                    <p>Linkedin</p>
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+                <div class="site" title="add shortcut">
+                    <i class="fa fa-plus"></i>
+                    <p>Add Shortcut</p>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
